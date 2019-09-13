@@ -4,9 +4,9 @@ This repository is meant to be a template repo we can just spin up new module re
 
 ## How to
 
-# Actual readme below. Delete above here.
+## Actual readme below  - Delete above here
 
-_Please put a description of what this module does here_
+Please put a description of what this module does here
 
 ## Terraform Versions
 
@@ -28,6 +28,5 @@ module "example" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-## Inputs
-## Outputs
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
