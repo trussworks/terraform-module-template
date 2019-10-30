@@ -30,3 +30,27 @@ module "example" {
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+## Developer Setup
+
+Install dependencies (macOS)
+
+```shell
+brew install pre-commit go terraform terraform-docs
+```
+
+### Testing
+
+[Terratest](https://github.com/gruntwork-io/terratest) is being used for
+automated testing with this module. Tests in the `test` folder can be run
+locally by running the following command:
+
+```text
+make test
+```
+
+Or with aws-vault:
+
+```text
+AWS_VAULT_KEYCHAIN_NAME=<NAME> aws-vault exec <PROFILE> -- make test
+```
