@@ -26,5 +26,3 @@ repos:
     rev: v1.21.0
     hooks:
       - id: golangci-lint
-        entry: golangci-lint run --verbose
-        verbose: true
