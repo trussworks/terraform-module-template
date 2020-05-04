@@ -40,7 +40,7 @@ module "example" {
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12 |
+| terraform | >= 0.12.24 |
 
 ## Providers
 
