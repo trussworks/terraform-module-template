@@ -3,6 +3,8 @@ jobs:
   validate:
     docker:
       - image: trussworks/circleci-docker-primary:40076395a6e6a349f92caa92c4de614e105fe672
+        environment:
+          - TEST_RESULTS: /tmp/test-results
     steps:
       - checkout
       - restore_cache:
@@ -15,6 +17,8 @@ jobs:
           key: pre-commit-dot-cache-{{ checksum ".pre-commit-config.yaml" }}
           paths:
             - ~/.cache/pre-commit
+      - store_test_results:
+          path: /tmp/test-results/gotest
 
 workflows:
   version: 2
