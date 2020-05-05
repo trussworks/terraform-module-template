@@ -10,7 +10,7 @@ pre_commit_tests: ensure_pre_commit ## Run pre-commit tests
 
 .PHONY: test
 test: pre_commit_tests
-	  scripts/make-test
+	  bin/make-test
 
 .PHONY: clean
 clean:
