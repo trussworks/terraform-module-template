@@ -18,8 +18,9 @@ jobs:
             source $BASH_ENV
       - run: go get github.com/jstemmer/go-junit-report
       - run:
-          name: Run pre-commit and terratest
-          command: make test
+          name: Run pre-commit
+          command: pre-commit run --all-files
+                   make test
       - save_cache:
           key: pre-commit-dot-cache-{{ checksum ".pre-commit-config.yaml" }}
           paths:
