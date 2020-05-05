@@ -10,7 +10,7 @@ jobs:
       - restore_cache:
           keys:
             - pre-commit-dot-cache-{{ checksum ".pre-commit-config.yaml" }}
-            - go-mod-sources-v2-{{ checksum "go.sum" }}-{{ checksum "scripts/check-go-version" }}
+            - go-mod-sources-v1-{{ checksum "go.sum" }}-{{ checksum "scripts/check-go-version" }}
       - run:
           name: Adding go binaries to $PATH
           command: |
@@ -25,7 +25,7 @@ jobs:
           paths:
             - ~/.cache/pre-commit
       - save_cache:
-          key: go-mod-sources-v2-{{ checksum "go.sum" }}-{{ checksum "scripts/check-go-version" }}
+          key: go-mod-sources-v1-{{ checksum "go.sum" }}-{{ checksum "scripts/check-go-version" }}
           paths:
             - "~/go/pkg/mod"
       - store_test_results:
