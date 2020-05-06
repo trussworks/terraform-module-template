@@ -80,3 +80,8 @@ Or with aws-vault:
 ```text
 AWS_VAULT_KEYCHAIN_NAME=<NAME> aws-vault exec <PROFILE> -- make test
 ```
+
+### A Note About Golang and Imports
+
+In order to import the dependencies required to set up Terratest metadata in CircleCI, this repository contains initialized (and populated) `go.mod` and `go.sum` files, as well as a `main.go` file that self-imports. Delete these three files to set up your own project, and run `go mod init YOUR_SHINY_NEW_REPO` as usual to create these files and pull in these initial dependencies for your own shiny new repository when you make your vendoring decisions.
+
