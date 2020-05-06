@@ -3,4 +3,4 @@
 # go mod tidy will alter go.mod or go.sum if it finds any discrepancies
 #
 
-go mod tidy
+go mod tidy -v
