@@ -8,8 +8,7 @@ This repository is meant to be a template repo we can just spin up new module re
 1. Write your terraform code in the root dir.
 1. Create an example of the module in use in the `examples` dir.
 1. Ensure you've completed the [Developer Setup](#developer-setup).
-1. Write terratests in the `test` dir.
-1. [With slight modification from the Terratest docs](https://github.com/gruntwork-io/terratest#setting-up-your-project): In the root dir, run `go mod init MODULE_NAME` to get a new go.mod file. Then run `go mod tidy` to download terratest.
+1. In the root dir, run `go mod init MODULE_NAME` to get a new `go.mod` file. Then run `go mod tidy`. This creates a new `go.sum` file and imports the dependencies and checksums specific to your repository.
 1. Run your tests to ensure they work as expected using instructions below.
 
 ## Actual readme below  - Delete above here
@@ -80,8 +79,3 @@ Or with aws-vault:
 ```text
 AWS_VAULT_KEYCHAIN_NAME=<NAME> aws-vault exec <PROFILE> -- make test
 ```
-
-### A Note About Golang and Imports
-
-In order to import the dependencies required to set up Terratest metadata in CircleCI, this repository contains initialized (and populated) `go.mod` and `go.sum` files. Delete these files to set up your own project, and run `go mod init YOUR_SHINY_NEW_REPO` as usual to create these files and pull in these initial dependencies for your own shiny new repository when you make your vendoring decisions.
-
