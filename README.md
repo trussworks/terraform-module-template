@@ -18,7 +18,9 @@ Please put a description of what this module does here
 ## Terraform Versions
 
 _This is how we're managing the different versions._
-Terraform 0.12. Pin module version to ~> 2.0. Submit pull-requests to master branch.
+Terraform 0.13. Pin module version to ~> 2.0. Submit pull-requests to master branch.
+
+Terraform 0.12. Pin module version to ~> 1.0.1. Submit pull-requests to terraform012 branch.
 
 Terraform 0.11. Pin module version to ~> 1.0. Submit pull-requests to terraform011 branch.
 
