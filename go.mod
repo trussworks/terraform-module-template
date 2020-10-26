@@ -4,7 +4,7 @@ go 1.15
 
 require (
 	github.com/aws/aws-sdk-go v1.30.22 // indirect
-	github.com/gruntwork-io/terratest v0.30.11
+	github.com/gruntwork-io/terratest v0.30.13
 	github.com/kr/text v0.2.0 // indirect
 	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
 	golang.org/x/net v0.0.0-20200506145744-7e3656a0809f // indirect
