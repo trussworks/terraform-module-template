@@ -4,5 +4,12 @@
   "first-line-h1": false,
   "line_length": false,
   "no-multiple-blanks": false,
-  "no-inline-html": false
+  "fenced-code-language": true,
+  "no-duplicate-header": {
+    "siblings_only": true
+  },
+  "code-block-style": {
+    "style": "fenced"
+  },
+  "single-trailing-newline": false
 }
