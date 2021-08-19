@@ -1,6 +1,6 @@
 module github.com/trussworks/terraform-module-template
 
-go 1.15
+go 1.17
 
 require (
 	github.com/go-sql-driver/mysql v1.5.0 // indirect
