@@ -2,7 +2,7 @@ module github.com/trussworks/terraform-module-template
 
 go 1.17
 
-require github.com/gruntwork-io/terratest v0.37.12
+require github.com/gruntwork-io/terratest v0.37.13
 
 require (
 	github.com/agext/levenshtein v1.2.1 // indirect
@@ -30,9 +30,9 @@ require (
 	github.com/stretchr/testify v1.4.0 // indirect
 	github.com/urfave/cli v1.22.2 // indirect
 	github.com/zclconf/go-cty v1.2.1 // indirect
-	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9 // indirect
-	golang.org/x/net v0.0.0-20201110031124-69a78807bb2b // indirect
-	golang.org/x/sys v0.0.0-20200930185726-fdedc70b468f // indirect
+	golang.org/x/crypto v0.0.0-20210513164829-c07d793c2f9a // indirect
+	golang.org/x/net v0.0.0-20210226172049-e18ecbb05110 // indirect
+	golang.org/x/sys v0.0.0-20201119102817-f84b799fce68 // indirect
 	golang.org/x/text v0.3.3 // indirect
 	google.golang.org/appengine v1.6.5 // indirect
 	gopkg.in/yaml.v2 v2.2.8 // indirect
