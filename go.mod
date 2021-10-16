@@ -2,7 +2,7 @@ module github.com/trussworks/terraform-module-template
 
 go 1.17
 
-require github.com/gruntwork-io/terratest v0.38.1
+require github.com/gruntwork-io/terratest v0.38.2
 
 require (
 	github.com/agext/levenshtein v1.2.3 // indirect
