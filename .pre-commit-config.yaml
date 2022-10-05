@@ -35,6 +35,8 @@ repos:
         additional_dependencies:
           - mdformat-gfm
           - mdformat-toc
+        # mdformat fights with terraform_docs
+        exclude: README.m(ark)?d(own)?
 
   - repo: https://github.com/antonbabenko/pre-commit-terraform
     rev: v1.75.0
