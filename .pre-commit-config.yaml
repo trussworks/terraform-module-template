@@ -1,4 +1,10 @@
+---
 repos:
+  - repo: meta
+    hooks:
+      # - id: check-hooks-apply
+      - id: check-useless-excludes
+
   - repo: local
     hooks:
       - id: go-version
@@ -8,21 +14,29 @@ repos:
         types: [go]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.0.1
+    rev: v4.3.0
     hooks:
       - id: check-json
       - id: check-merge-conflict
+      - id: check-symlinks
       - id: check-yaml
       - id: detect-private-key
+      - id: end-of-file-fixer
       - id: pretty-format-json
         args:
           - --autofix
+      - id: mixed-line-ending
       - id: trailing-whitespace
 
-  - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.28.1
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 0.7.16
     hooks:
-      - id: markdownlint
+      - id: mdformat
+        additional_dependencies:
+          - mdformat-gfm
+          - mdformat-toc
+        # mdformat fights with terraform_docs
+        exclude: README.m(ark)?d(own)?
 
   - repo: https://github.com/antonbabenko/pre-commit-terraform
     rev: v1.75.0
@@ -31,6 +45,6 @@ repos:
       - id: terraform_fmt
 
   - repo: https://github.com/golangci/golangci-lint
-    rev: v1.42.0
+    rev: v1.50.0
     hooks:
       - id: golangci-lint
