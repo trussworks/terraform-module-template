@@ -37,6 +37,5 @@ jobs:
         run: |
           git add .
           if output=$(git status --porcelain) && [ -n "$output" ]; then
-            git commit -m 'Fix go modules'
-            git push
+            git commit -m 'Fix go modules' && git push
           fi
