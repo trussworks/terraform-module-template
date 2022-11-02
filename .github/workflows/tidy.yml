@@ -10,7 +10,7 @@ jobs:
   tidy:
     name: run go mod tidy and updated
     runs-on: ubuntu-latest
-    if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
+    if: github.actor == 'renovatebot'
     steps:
       - name: checkout
         uses: actions/checkout@v1
