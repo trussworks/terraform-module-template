@@ -1,6 +1,7 @@
 # Truss Terraform Module template
 
-This repository is meant to be a template repo we can just spin up new module repos from with our general format.
+This repository is meant to be a template repo we can just spin up new module
+repos from with our general format.
 
 ## Creating a new Terraform Module
 
@@ -8,21 +9,26 @@ This repository is meant to be a template repo we can just spin up new module re
 1. Write your terraform code in the root dir.
 1. Create an example of the module in use in the `examples` dir.
 1. Ensure you've completed the [Developer Setup](#developer-setup).
-1. In the root dir, run `go mod init MODULE_NAME` to get a new `go.mod` file. Then run `go mod tidy`. This creates a new `go.sum` file and imports the dependencies and checksums specific to your repository.
+1. In the root dir, run `go mod init MODULE_NAME` to get a new `go.mod` file.
+   Then run `go mod tidy`. This creates a new `go.sum` file and imports the
+   dependencies and checksums specific to your repository.
 1. Run your tests to ensure they work as expected using instructions below.
 
-## Actual readme below  - Delete above here
+## Actual readme below - Delete above here
 
 Please put a description of what this module does here
 
 ## Terraform Versions
 
 _This is how we're managing the different versions._
-Terraform 0.13. Pin module version to ~> 2.0. Submit pull-requests to master branch.
+Terraform 0.13. Pin module version to ~> 2.0.
+Submit pull-requests to master branch.
 
-Terraform 0.12. Pin module version to ~> 1.0.1. Submit pull-requests to terraform012 branch.
+Terraform 0.12. Pin module version to ~> 1.0.1.
+Submit pull-requests to terraform012 branch.
 
-Terraform 0.11. Pin module version to ~> 1.0. Submit pull-requests to terraform011 branch.
+Terraform 0.11. Pin module version to ~> 1.0.
+Submit pull-requests to terraform011 branch.
 
 ## Usage
 
@@ -41,8 +47,8 @@ module "example" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 3.0 |
+| terraform | >= 0.13 |
+| aws | ~> 3.0 |
 
 ## Providers
 
