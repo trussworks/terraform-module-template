@@ -43,13 +43,12 @@ module "example" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
-| Name      | Version |
-| --------- | ------- |
+| Name | Version |
+|------|---------|
 | terraform | >= 0.13 |
-| aws       | ~> 3.0  |
+| aws | ~> 3.0 |
 
 ## Providers
 
@@ -70,7 +69,6 @@ No inputs.
 ## Outputs
 
 No outputs.
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Developer Setup
