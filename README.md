@@ -32,7 +32,7 @@ module "example" {
 
 | Name | Version |
 |------|---------|
-| terraform | >= 1.34 |
+| terraform | >= 1.3.4 |
 | aws | ~> 3.0 |
 
 ## Providers
