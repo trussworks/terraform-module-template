@@ -9,9 +9,6 @@ repos from with our general format.
 1. Write your terraform code in the root dir.
 1. Create an example of the module in use in the `examples` dir.
 1. Ensure you've completed the [Developer Setup](#developer-setup).
-1. In the root dir, run `go mod init MODULE_NAME` to get a new `go.mod` file.
-   Then run `go mod tidy`. This creates a new `go.sum` file and imports the
-   dependencies and checksums specific to your repository.
 1. Run your tests to ensure they work as expected using instructions below.
 
 ## Actual readme below - Delete above here
@@ -76,6 +73,6 @@ No outputs.
 Install dependencies (macOS)
 
 ```shell
-brew install pre-commit go terraform terraform-docs
+brew install pre-commit terraform terraform-docs
 pre-commit install --install-hooks
 ```
