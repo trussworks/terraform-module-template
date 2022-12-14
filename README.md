@@ -61,6 +61,7 @@ No outputs.
 Install dependencies (macOS)
 
 ```shell
-brew install pre-commit terraform terraform-docs
+brew install pre-commit tfenv terraform-docs
+tfenv install
 pre-commit install --install-hooks
 ```
