@@ -9,26 +9,11 @@ repos from with our general format.
 1. Write your terraform code in the root dir.
 1. Create an example of the module in use in the `examples` dir.
 1. Ensure you've completed the [Developer Setup](#developer-setup).
-1. In the root dir, run `go mod init MODULE_NAME` to get a new `go.mod` file.
-   Then run `go mod tidy`. This creates a new `go.sum` file and imports the
-   dependencies and checksums specific to your repository.
 1. Run your tests to ensure they work as expected using instructions below.
 
 ## Actual readme below - Delete above here
 
 Please put a description of what this module does here
-
-## Terraform Versions
-
-_This is how we're managing the different versions._
-Terraform 0.13. Pin module version to ~> 2.0.
-Submit pull-requests to master branch.
-
-Terraform 0.12. Pin module version to ~> 1.0.1.
-Submit pull-requests to terraform012 branch.
-
-Terraform 0.11. Pin module version to ~> 1.0.
-Submit pull-requests to terraform011 branch.
 
 ## Usage
 
@@ -47,8 +32,8 @@ module "example" {
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.13 |
-| aws | ~> 3.0 |
+| terraform | >= 1.3.4 |
+| aws | ~> 4.46.0 |
 
 ## Providers
 
@@ -76,6 +61,7 @@ No outputs.
 Install dependencies (macOS)
 
 ```shell
-brew install pre-commit go terraform terraform-docs
+brew install pre-commit tfenv terraform-docs
+tfenv install
 pre-commit install --install-hooks
 ```
