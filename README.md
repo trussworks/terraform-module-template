@@ -7,9 +7,6 @@ repos from with our general format.
 
 1. Clone this repo, renaming appropriately.
 1. Write your terraform code in the root dir.
-1. Create an example of the module in use in the `examples` dir.
-1. Ensure you've completed the [Developer Setup](#developer-setup).
-1. Run your tests to ensure they work as expected using instructions below.
 
 ## Actual readme below - Delete above here
 
@@ -32,8 +29,8 @@ module "example" {
 
 | Name | Version |
 |------|---------|
-| terraform | >= 1.3.4 |
-| aws | ~> 4.48.0 |
+| terraform | >= 1.3.7 |
+| aws | ~> 4.52.0 |
 
 ## Providers
 
