@@ -1,0 +1,7 @@
+# These are just examples to get you started.
+misconfigurations:
+  - id: AVD-AWS-0342 # (MEDIUM): IAM policy allows 'iam:PassRole' action
+  - id: AVD-AWS-0104 # (CRITICAL): Security group rule allows unrestricted egress to any IP address.
+  - id: AVD-AWS-0176 # (MEDIUM): Instance does not have IAM Authentication enabled
+  - id: AVD-AWS-0133 # (LOW): Instance does not have performance insights enabled.
+  - id: AVD-AWS-0099 # (LOW): Security group explicitly uses the default description.
