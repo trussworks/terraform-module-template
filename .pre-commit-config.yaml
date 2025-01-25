@@ -41,3 +41,6 @@ repos:
       - id: terraform_fmt
       - id: terraform_tflint
       - id: terraform_trivy
+        args:
+          - --args=--ignorefile=__GIT_WORKING_DIR__/.trivyignore.yaml
+          - --args=--config=__GIT_WORKING_DIR__trivy.yaml
