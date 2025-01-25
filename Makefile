@@ -1,13 +1,7 @@
-.PHONY: ensure_pre_commit
-ensure_pre_commit: .git/hooks/pre-commit ## Ensure pre-commit is installed
-.git/hooks/pre-commit: /usr/local/bin/pre-commit
-	pre-commit install
-	pre-commit install-hooks
-
-.PHONY: pre_commit_tests
-pre_commit_tests: ensure_pre_commit ## Run pre-commit tests
-	pre-commit run --all-files
-
-.PHONY: clean
-clean:
-	rm -f .*.stamp
+.PHONY: target_lock
+target_lock:
+	terraform providers lock \
+  		-platform=windows_amd64 \
+  		-platform=darwin_amd64 \
+  		-platform=darwin_arm64 \
+  		-platform=linux_amd64
