@@ -24,13 +24,13 @@ module "example" {
 }
 ```
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
-| terraform | >= 1.3.7 |
-| aws | ~> 4.52.0 |
+| terraform | 1.5.7 |
+| aws | ~> 5.0 |
 
 ## Providers
 
@@ -51,14 +51,20 @@ No inputs.
 ## Outputs
 
 No outputs.
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
 
 ## Developer Setup
+
+- [Pre-Commit](https://pre-commit.com/)
+- [TFenv](https://github.com/tfutils/tfenv)
+- [Terraform-Docs](https://terraform-docs.io/)
+- [TFLint](https://github.com/terraform-linters/tflint)
+- [Trivy](https://trivy.dev/)
 
 Install dependencies (macOS)
 
 ```shell
-brew install pre-commit tfenv terraform-docs
+brew install pre-commit tfenv terraform-docs tflint trivy
 tfenv install
 pre-commit install --install-hooks
 ```
